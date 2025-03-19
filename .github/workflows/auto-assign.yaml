@@ -1,0 +1,19 @@
+name: Auto-Assign Issues
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  auto_assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Auto Assign Action
+        uses: krrish-sehgal/BLT-Action@giphy  # Replace with your action's repo
+        with:
+          repo-token: ${{ secrets.REPO_TOKEN }}
+          repository: ${{ github.repository }}
+          giphy-api-key: ${{ secrets.GIPHY_API_KEY }}
