@@ -3,6 +3,8 @@ name: Auto-Assign Issues
 on:
   issue_comment:
     types: [created]
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   auto_assign:
