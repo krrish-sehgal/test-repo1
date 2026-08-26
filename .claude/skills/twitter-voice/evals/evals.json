@@ -1,0 +1,26 @@
+{
+  "skill_name": "twitter-voice",
+  "evals": [
+    {
+      "id": 0,
+      "name": "campaign-recap",
+      "prompt": "we just wrapped an instagram reels campaign for a d2c skincare brand. 18 creators, 3 weeks, 40+ reels, 2.1 million views, total spend was 92,000 INR. write me a tweet about it",
+      "expected_output": "A lowercase stat-stacked tweet in the campaign-recap shape, ending on a cliffhanger question or takeaway, with INR + USD conversion",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "hot-take",
+      "prompt": "just watched another ai startup launch video, 3 minutes of cinematic drone shots and epic music before they even showed the product. i genuinely think simple screen-recorded demos win now. tweet this take",
+      "expected_output": "A short aphoristic hot-take tweet with stacked lines, minimal punctuation, one deliberate period at most",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "casual-win",
+      "prompt": "our agency just signed its first US client!! write a tweet, keep it chill, i don't want it to be cringe or braggy",
+      "expected_output": "A one-or-two line casual win-share tweet, lowercase, zero ceremony, at most one self-aware emoji",
+      "files": []
+    }
+  ]
+}
