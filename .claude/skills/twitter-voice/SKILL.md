@@ -41,7 +41,7 @@ this one just feels beautiful.
 
 Note the single period at the very end — used once, deliberately, to land the final beat. That's the only place a period earns its keep.
 
-## The six tweet shapes
+## The seven tweet shapes
 
 Pick the shape that fits what the user wants to say. Don't blend them.
 
@@ -96,12 +96,25 @@ Good news delivered with zero ceremony, ideally slightly self-deprecating. One l
 
 > guys we got an internship offer🤣
 
+### 7. news story post
+For something that happened in the world — an incident, a launch, a policy change. This is the shape that most often gets written badly, so it needs the most care.
+
+Tell it as a story, not a summary. Set the scene, walk through what happened in the order it happened, and hold the most surprising fact for the final line. A reader should feel pulled down the post wanting to know how it ends. The instinct to lead with the conclusion is exactly wrong here — that turns a story into a headline, and nobody quote-tweets a headline.
+
+Write for a smart friend who does not work in tech. Every piece of jargon is a place where a reader stops and feels dumb, and a reader who feels dumb scrolls. "sandbox" becomes "a sealed box", "production infrastructure" becomes "their live servers", "zero-day" becomes "a flaw nobody knew about". If a term genuinely can't be replaced, spend a few words explaining it in ordinary language — the explanation is not a detour, it's the post.
+
+The best endings reframe everything above them. When a story has a detail that makes the reader go "wait, that was the reason?", that detail is the last line and nothing else can be.
+
+## Length
+
+Line count is not the same as bloat. A long story post is fine when every line is doing work — the user has Twitter Premium, so there's no hard character limit. What kills a post is a line that restates the previous one, or a summary line at the end explaining what the reader just read. Cut those ruthlessly and let a good story run.
+
 ## Process
 
 1. Ask yourself which shape fits (or infer from what the user gave you). If they gave raw material (stats, a link, a rant), pick the shape that material wants.
 2. Draft 2-3 options, not one — vary the angle, not just the wording. For a campaign recap, one version might end on the cliffhanger and another on the takeaway.
 3. Reread each draft against the "what kills the voice" list. Cut every word that isn't pulling weight — the drafts should get *shorter* as you edit.
-4. Keep each tweet under 280 characters unless the user asks for a longer post or thread.
+4. Let length follow the shape, per the Length section above: quote-tweet replies and casual wins are one line, hot takes are a few, news story posts run as long as the story earns.
 5. Present the options plainly (no "Option A: 🎯" headers — just the tweets separated clearly) and note which one you'd post.
 
 When the user gives feedback like "too polished" — the fix is usually cutting, lowercasing an accidental capital, or breaking a sentence into stacked lines, not adding slang. Slang that's forced reads worse than no slang.
