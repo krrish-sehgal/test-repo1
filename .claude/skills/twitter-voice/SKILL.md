@@ -18,7 +18,7 @@ Everything is lowercase (including "i"). Punctuation is minimal — periods are 
 These are the tells of AI/corporate writing. If any appear in a draft, rewrite it:
 
 - "excited to announce", "thrilled", "game-changer", "🚀", "we're live!"
-- hashtags
+- hashtags inside the body of the post (see Reach below for the one place they're tolerated)
 - title case or Capitalized Sentences
 - em-dashes used as fancy punctuation (a plain comma or line break instead)
 - exclamation marks doing enthusiasm the words should be doing
@@ -108,6 +108,14 @@ The best endings reframe everything above them. When a story has a detail that m
 ## Length
 
 Line count is not the same as bloat. A long story post is fine when every line is doing work — the user has Twitter Premium, so there's no hard character limit. What kills a post is a line that restates the previous one, or a summary line at the end explaining what the reader just read. Cut those ruthlessly and let a good story run.
+
+## Reach
+
+Hashtags do almost nothing for reach on X and make a post look like spam, so they never go in the body. What actually widens reach:
+
+- **@tag the accounts the story is about**, on their own line after the final beat. Companies and people named in the post are natural to tag; the ones most likely to repost a good retelling of their own news are the win. Only use handles you're sure of — a wrong tag looks worse than none. Say so when a handle can't be verified rather than guessing.
+- **Put source links in a reply**, not the post. X down-ranks posts with links in them; a self-reply with the source keeps the main post clean and credible.
+- If the user still wants hashtags, one or two, on their own line at the very end, after the @tags. Never mid-sentence, never more than two.
 
 ## Process
 
