@@ -93,6 +93,43 @@ Reacting to a thread about kulfi's distribution:
 
 ---
 
+## 7. Replies to other people's posts
+
+Someone posts a "10 github repos to learn ai" list that ends:
+
+> Don't bookmark all 10 and forget about them.
+> Pick based on where you are: Python → Python-100-Days, ML → ML-For-Beginners, ... Agents → AI-Agents-for-Beginners
+> Pick one. Build something. Then move to the next.
+
+Three replies, three different moves:
+
+**Sharpen (adds information the post didn't have):**
+> small thing on the list, stable diffusion and segment anything are research code, not courses
+>
+> worth opening once you already know what you are looking for
+>
+> for actual beginners the microsoft ones and llms-from-scratch are the only real starting points here, the rest are destinations
+
+**Take (stands alone, so it also works as a quote-tweet):**
+> the last three lines are the post
+>
+> everyone reads a list like this, stars all ten, and feels like they learned something
+>
+> the repo you finish is the one you opened because you were stuck on something that week
+>
+> pick the problem first, then the repo.
+
+**One-liner (the post is already complete, so just be the funniest thing under it):**
+> starred all ten, will open zero, felt productive
+
+**Mechanics:**
+- none of them open with praise; the first line is already the addition
+- the sharpen reply gives the author something to answer (defend the list), which is the point
+- the take reply is a full thought, so it can be quoted instead of replied if the post is old
+- none of them claim an experience the user hasn't had; a version like "llms-from-scratch is the one, [what you built]" needs the user to fill the slot
+
+---
+
 ## Vocabulary notes
 
 - slang that appears naturally: noice, nvm, guys, ngl

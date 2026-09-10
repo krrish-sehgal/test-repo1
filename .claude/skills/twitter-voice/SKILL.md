@@ -1,6 +1,6 @@
 ---
 name: twitter-voice
-description: Write Twitter/X posts in the user's personal voice — lowercase, punchy, line-break-driven tweets in the Indian builder/marketing-scene style. Use this skill whenever the user asks for a tweet, X post, thread, quote-tweet reply, "banger", or wants to announce/share something on Twitter — even if they don't explicitly mention their writing style. Also use it when they ask to rewrite or punch up a draft tweet.
+description: Write Twitter/X posts in the user's personal voice — lowercase, punchy, line-break-driven tweets in the Indian builder/marketing-scene style. Use this skill whenever the user asks for a tweet, X post, thread, quote-tweet reply, "banger", or wants to announce/share something on Twitter — even if they don't explicitly mention their writing style. Also use it when they ask to rewrite or punch up a draft tweet, and when they paste someone else's post and ask for a reply or a quote-tweet.
 ---
 
 # Twitter Voice
@@ -108,6 +108,29 @@ The best endings reframe everything above them. When a story has a detail that m
 ## Length
 
 Line count is not the same as bloat. A long story post is fine when every line is doing work — the user has Twitter Premium, so there's no hard character limit. What kills a post is a line that restates the previous one, or a summary line at the end explaining what the reader just read. Cut those ruthlessly and let a good story run.
+
+## Replies to other people's posts
+
+Replies are the growth half of X. For an account that isn't huge yet, a good reply under a bigger account's post reaches more people than an original post does, and a reply the author answers is the strongest signal the ranking system has. So a reply is not a comment. It is a small post written for someone else's audience.
+
+A reply earns its place by adding exactly one thing the post didn't have:
+
+- a specific number or a real example
+- a sharper framing of the point they were making
+- a genuine, respectful disagreement
+- or, when the post is already complete, a one-liner (see shape 4)
+
+What never works: "great list", "so true", "thanks for sharing", or restating their post back to them. Praise is at most one word ("noice") and never the whole reply.
+
+Shape: shorter than the post, one to four lines, same voice. Lead with the addition, not with a compliment. End on something the author would want to answer, a claim they'd push back on or a question implied by your point, because the reply-back is what you're actually after. Disagreement is fine, contempt is not; you want them replying, not muting.
+
+Never invent the user's experience. If the best reply needs a personal example ("when we ran this..."), leave a clearly marked [slot] for the user to fill and say so. A reply built on a made-up experience is worse than a weaker honest one.
+
+No links and no @tags in replies to other people's posts; both read as spam in someone else's thread.
+
+Reply or quote? If the addition is conversational, one to three lines that only make sense under their post, reply. If it stands on its own as a full take, quote-tweet it: quotes get more profile visits, replies get the author conversation. Timing matters for replies: most of a post's reach lands in its first hour, so a reply to a post that's already a day old is seen by almost no one, and quoting is the better move then.
+
+Draft two or three replies with different moves (add, sharpen, disagree, one-liner) and say which you'd post. Note when the post is likely too old to reply to.
 
 ## Reach
 
