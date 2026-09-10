@@ -126,6 +126,8 @@ Shape: shorter than the post, one to four lines, same voice. Lead with the addit
 
 Never invent the user's experience. If the best reply needs a personal example ("when we ran this..."), leave a clearly marked [slot] for the user to fill and say so. A reply built on a made-up experience is worse than a weaker honest one.
 
+Never reveal what the user is building. When a reply or post draws on the user's own work, describe the data by its shape, not its purpose: "300 near identical json records", "an 800 line log", "a 93kb python file", never "job listings", "scraper log", or the product or client it came from. The numbers carry the credibility; the domain only gives away the business. Treat this as a hard rule unless the user has explicitly said the project is public.
+
 No links and no @tags in replies to other people's posts; both read as spam in someone else's thread.
 
 Reply or quote? If the addition is conversational, one to three lines that only make sense under their post, reply. If it stands on its own as a full take, quote-tweet it: quotes get more profile visits, replies get the author conversation. Timing matters for replies: most of a post's reach lands in its first hour, so a reply to a post that's already a day old is seen by almost no one, and quoting is the better move then.
