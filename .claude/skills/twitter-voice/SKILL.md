@@ -114,7 +114,16 @@ Line count is not the same as bloat. A long story post is fine when every line i
 Hashtags do almost nothing for reach on X and make a post look like spam, so they never go in the body. What actually widens reach:
 
 - **@tag the accounts the story is about**, on their own line after the final beat. Companies and people named in the post are natural to tag; the ones most likely to repost a good retelling of their own news are the win. Only use handles you're sure of — a wrong tag looks worse than none. Say so when a handle can't be verified rather than guessing.
-- **Put source links in a reply**, not the post. X down-ranks posts with links in them; a self-reply with the source keeps the main post clean and credible.
+- **Put source links in a reply**, not the post. X down-ranks posts with links in them by roughly a third to a half; a self-reply with the source keeps the main post clean and credible, and gives the "source?" people somewhere to go.
+
+  For any post that makes a factual claim (news story, campaign recap with someone else's numbers, a quoted stat), write the first reply too and hand it over ready to paste, right under the post. One lowercase line in the same voice, then one or two links, never more. It gets posted immediately after the main post, before the post starts spreading. Something like:
+
+  ```
+  sources, in case anyone asks
+  https://example.com/the-primary-source
+  ```
+
+  Skip it for jokes, one-liners, hot takes and casual wins. A source under a joke kills the joke.
 - If the user still wants hashtags, one or two, on their own line at the very end, after the @tags. Never mid-sentence, never more than two.
 
 ## Process

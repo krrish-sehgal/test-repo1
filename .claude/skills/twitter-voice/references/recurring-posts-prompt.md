@@ -41,7 +41,7 @@ The user has Twitter Premium, so there is no character limit. Let a good story r
 
 ## Output
 
-Give the 5 posts, each inside its own fenced code block so it can be copied cleanly. Under each, one short line saying what the story is plus the source links you verified it against. No preamble — start with the first post.
+Give the 5 posts, each inside its own fenced code block so it can be copied cleanly. Directly under each post, a second small fenced block containing the ready-to-paste first reply: one lowercase line in the same voice plus one or two source links (this is where links live, since a link in the main post cuts its reach). Then one short line saying what the story is, plus any extra sources you verified it against. No preamble — start with the first post.
 
 If you genuinely cannot find 5 stories worth posting, write fewer good ones and say why. Three strong posts beat five padded with stale news.
 
