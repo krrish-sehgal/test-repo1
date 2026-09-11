@@ -39,7 +39,12 @@ stop and say so.
 ## Reading X pages
 
 `get_page_text` only returns the first article on X, so use `read_page` with
-`filter: all` and `max_chars: 30000-40000`. Every post, notification and search result is
+`filter: all` and `max_chars: 30000-40000`. Batch all five reads in one `browser_batch`;
+the output will be persisted to a file, and `scripts/parse_x_pages.py <that file> --known
+<comma-separated status ids already queued> --labels NOTIFICATIONS,HOME,S1,S2,S3` turns it
+into a compact candidate list (handle, age, counts, url, text, NEW/KNOWN, truncated). If a
+page comes back with no articles it did not render in time; a second `wait` and
+`read_page` on the same tab costs no page load, so do that before giving up on it. Every post, notification and search result is
 an `article`: an author `link` with the handle in its href, a `link "N minutes ago"` (or a
 date) whose href is the post's status URL, the text as one or more `generic` nodes, and a
 `group` such as `"27 replies, 9 reposts, 197 likes, 49 bookmarks, 8371 views"`. A
