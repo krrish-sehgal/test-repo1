@@ -82,9 +82,13 @@ Three lanes, run in this order:
    `(ai OR llm OR agents) (startup OR founder) min_faves:100 -filter:links -filter:replies lang:en`
 2. Indian startup scene. Never use bare `india` or `indian`, it pulls in politics; use
    cities and startup vocabulary instead:
-   `(bengaluru OR bangalore OR gurgaon OR mumbai OR "yc" OR arr) (startup OR founder OR raised) min_faves:30 -filter:links -filter:replies lang:en`
+   `(bengaluru OR bangalore OR gurgaon OR mumbai OR "yc" OR arr) (startup OR founder OR seed OR "series a" OR ipo) min_faves:40 -filter:links -filter:replies lang:en`
+   Not `raised`: politicians "raise" issues, and city names alone pull in civic news, so
+   expect a third of this lane to be noise and skip it without comment.
 3. Creator and marketing. Niche lanes need one group and a lower floor:
-   `(ugc OR "creator economy" OR "influencer marketing" OR "brand deal" OR "d2c") min_faves:20 -filter:links -filter:replies lang:en`
+   `("ugc ads" OR "ugc creator" OR "ugc video" OR "creator economy" OR "influencer marketing" OR "brand deal" OR d2c) min_faves:20 -filter:links -filter:replies lang:en`
+   Never bare `ugc`: in India it is also the University Grants Commission and the
+   results fill with education politics.
 
 If a search returns no `article` nodes, retry once with the second parenthetical group
 removed and `min_faves` halved. If it still returns nothing, say so and move on.
