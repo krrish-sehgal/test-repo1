@@ -83,8 +83,10 @@ for label, tree in zip(labels, blocks):
     if label.startswith('PEER:'):
         ds = [parse(x) for x in arts]
         ds = [d for d in ds if d['sid'] and d['c']['views']]
-        pinned = [d for d in ds if d['mins'] >= 10**6]          # dated posts at the top are pinned
-        ds = [d for d in ds if d['mins'] < 10**6]
+        # a pinned post is a dated one sitting above a newer one at the top of the page
+        pinned = []
+        if len(ds) > 1 and ds[0]['mins'] >= 10**6 and ds[1]['mins'] < ds[0]['mins']:
+            pinned, ds = ds[:1], ds[1:]
         for d in pinned: print(f"  pinned (ignored): @{d['handle']} {d['age']} {d['counts']} :: {d['text'][:120]}")
         views = [d['c']['views'] for d in ds]
         med = statistics.median(views) if views else 0
