@@ -99,9 +99,12 @@ replies from a mid-size account is a better target than a 1,000-like broadcast.
    accounts almost exclusively. This lane is noise most runs; skip it without comment.
 4. Indian engineer careers and money. The user's best-performing replies are salary and
    cost-of-living arithmetic, so hunt for that directly:
-   `(lpa OR ctc OR "in hand" OR "offer" OR faang OR fresher OR "notice period") (bangalore OR hyderabad OR pune OR gurgaon OR remote OR startup) min_faves:30 -filter:links -filter:replies lang:en`
+   `(lpa OR ctc OR "in hand" OR faang OR fresher OR "notice period" OR referral OR "off campus" OR cgpa) (bangalore OR hyderabad OR pune OR gurgaon OR google OR amazon OR startup OR placement) min_faves:30 -filter:links -filter:replies lang:en`
+   Not `remote` or `offer` on their own: they pull in war news, layoff fiction and job ads.
 5. Builders and indie hackers, the reply-heavy crowd:
-   `("build in public" OR "indie hacker" OR "solo founder" OR "side project" OR mrr OR "first customer" OR "shipped") min_faves:30 -filter:links -filter:replies lang:en`
+   `("build in public" OR "indie hacker" OR "solo founder" OR "side project" OR "first customer" OR "first paying") (saas OR app OR users OR launched OR mvp OR revenue) min_faves:30 -filter:links -filter:replies lang:en -token -airdrop -listing -nft`
+   Not `shipped` or `mrr` unpaired: both are crypto vocabulary now and the lane fills with
+   token launches.
 
 If a search returns no `article` nodes, retry once with the second parenthetical group
 removed and `min_faves` halved. If it still returns nothing, say so and move on.
