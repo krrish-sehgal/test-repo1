@@ -21,9 +21,10 @@ halves true and the account stays safe.
   `javascript_tool`. Never touch Reply, Like, Repost, Follow, Bookmark or Post. Not even
   the Following tab. Search is done by navigating to a search URL, never by typing in the
   search box. If a step seems to need a click, skip the step.
-- At most nine page loads per run, with a 3 second `wait` after each: notifications, home,
-  three searches, up to two retries or truncated-post opens, spare. Two runs a day,
-  morning and evening, matching the posting routine.
+- At most twelve page loads per run, with a 3 second `wait` after each: notifications,
+  home, five searches, up to three retries or truncated-post opens, spare. Three or four
+  runs a day (morning, early afternoon, evening, late night), two to three hours apart.
+  The user pastes by hand between runs, so the queue must be big enough to fill that gap.
 - Own the tab: create it, use it, close it before finishing.
 - Read `.claude/skills/twitter-voice/SKILL.md` first, especially "Replies to other
   people's posts". Every draft follows it: adds one thing, no links, no @tags, never
@@ -81,10 +82,11 @@ straight to search URLs; the operators work in the URL and `f=live` returns the 
 posts that have already cleared the engagement floor, which is exactly "what is working
 right now". URL-encode the query and use `&src=typed_query&f=live`.
 
-Three lanes, run in this order:
+Five lanes, run in this order. Floors are set low on purpose: a post with 40 likes and 15
+replies from a mid-size account is a better target than a 1,000-like broadcast.
 
 1. AI and startups:
-   `(ai OR llm OR agents) (startup OR founder) min_faves:100 -filter:links -filter:replies lang:en`
+   `(ai OR llm OR agents) (startup OR founder) min_faves:60 -filter:links -filter:replies lang:en`
 2. Indian startup scene. Never use bare `india` or `indian`, it pulls in politics; use
    cities and startup vocabulary instead:
    `(bengaluru OR bangalore OR gurgaon OR mumbai OR "yc" OR arr) (startup OR founder OR seed OR "series a" OR ipo) min_faves:40 -filter:links -filter:replies lang:en`
@@ -94,7 +96,12 @@ Three lanes, run in this order:
    `("ugc ads" OR "ugc creator" OR "ugc video" OR "creator economy" OR "influencer marketing" OR "creator marketing" OR d2c OR "brand campaign") min_faves:20 -filter:links -filter:replies lang:en`
    Never bare `ugc`: in India it is also the University Grants Commission and the
    results fill with education politics. Never `"brand deal"`: it returns k-pop fan
-   accounts almost exclusively.
+   accounts almost exclusively. This lane is noise most runs; skip it without comment.
+4. Indian engineer careers and money. The user's best-performing replies are salary and
+   cost-of-living arithmetic, so hunt for that directly:
+   `(lpa OR ctc OR "in hand" OR "offer" OR faang OR fresher OR "notice period") (bangalore OR hyderabad OR pune OR gurgaon OR remote OR startup) min_faves:30 -filter:links -filter:replies lang:en`
+5. Builders and indie hackers, the reply-heavy crowd:
+   `("build in public" OR "indie hacker" OR "solo founder" OR "side project" OR mrr OR "first customer" OR "shipped") min_faves:30 -filter:links -filter:replies lang:en`
 
 If a search returns no `article` nodes, retry once with the second parenthetical group
 removed and `min_faves` halved. If it still returns nothing, say so and move on.
@@ -122,8 +129,11 @@ Four sections, in this order:
 1. **Fresh, reply now**: anything under thirty minutes old from any pass, since that
    window closes fast.
 2. **Answer these on your own posts**: pass 1.
-3. **Conversations to join**: passes 2 and 3, best first. Five to eight replies across
-   sections 1-3 in total; more than that and the user will not post them.
+3. **Conversations to join**: passes 2 and 3, best first. Twelve to fifteen replies
+   across sections 1-3 in total. Mix lengths so the batch does not read as one voice
+   stamped fifteen times: roughly a third one-liners (shape 4 in the voice skill), a
+   third two-line additions, a third full three-to-four-line replies. Every unanswered
+   reply on the user's own posts gets a draft, even a short warm one.
 4. **What is working, and post ideas**: two or three lines on the formats and themes
    recurring in today's search results, then two or three original post ideas in the
    user's lane derived from them, each drafted in the voice (use the twitter-voice skill,
@@ -136,4 +146,14 @@ liked or replied, new followers worth following back), **new accounts to watch**
 pass 3 (handle, why, rough size), and anything skipped on purpose and why.
 
 The user copies each reply, opens the link, pastes, posts. Suggest they space them out
-over the next hour or two rather than firing all at once.
+over the next two hours, a few minutes apart, rather than firing all at once.
+
+## Volume and the ceiling
+
+Target 40 to 50 replies a day across three or four runs. Premium accounts sit well under
+X's rate limits at that volume; what gets an account throttled is the pattern, not the
+number. So: never two replies within the same minute, never the same opening phrase
+twice in a run, never more than two replies under the same author's posts per run, and
+every fifth reply or so should be a plain one-liner with no structure at all. If the
+user reports a "you're doing that too much" notice or replies suddenly getting near-zero
+views, drop back to twenty a day for two days before ramping again.
