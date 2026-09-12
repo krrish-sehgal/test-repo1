@@ -1,0 +1,3 @@
+# Optional. Public X List URLs, one per line, e.g. https://x.com/i/lists/1234567890
+# Create the list by hand on X (20-30 peers). When present, each run reads the first one
+# as an extra lane. Blank means the pass is skipped.

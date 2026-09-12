@@ -21,8 +21,9 @@ halves true and the account stays safe.
   `javascript_tool`. Never touch Reply, Like, Repost, Follow, Bookmark or Post. Not even
   the Following tab. Search is done by navigating to a search URL, never by typing in the
   search box. If a step seems to need a click, skip the step.
-- At most twelve page loads per run, with a 3 second `wait` after each: notifications,
-  home, five searches, up to three retries or truncated-post opens, spare. Three or four
+- At most fourteen page loads per run, with a 3 second `wait` after each: notifications,
+  home, five searches, two tracked-peer profiles, one X List if configured, up to three
+  retries or truncated-post opens. Three or four
   runs a day (morning, early afternoon, evening, late night), two to three hours apart.
   The user pastes by hand between runs, so the queue must be big enough to fill that gap.
 - Own the tab: create it, use it, close it before finishing.
@@ -40,10 +41,20 @@ stop and say so.
 ## Reading X pages
 
 `get_page_text` only returns the first article on X, so use `read_page` with
-`filter: all` and `max_chars: 30000-40000`. Batch all five reads in one `browser_batch`;
-the output will be persisted to a file, and `scripts/parse_x_pages.py <that file> --known
-<comma-separated status ids already queued> --labels NOTIFICATIONS,HOME,S1,S2,S3` turns it
-into a compact candidate list (handle, age, counts, url, text, NEW/KNOWN, truncated). If a
+`filter: all` and `max_chars: 30000-40000`. Batch all reads in one `browser_batch`; the
+output will be persisted to a file, and
+
+    scripts/parse_x_pages.py <that file> \
+      --known-file <scratchpad>/known_ids.txt --known-file <scratchpad>/skipped.tsv \
+      --labels NOTIFICATIONS,HOME,S1,S2,S4,S5,PEER:<handle>,PEER:<handle>,LIST:<name>
+
+turns it into a scored candidate list. Every candidate carries tags: **FRESH** (under 30
+min), **EARLY** (under 2h and under 10 replies: you land near the top), **HOT** (20+
+replies: the author is in the thread but you are one of many), **PEER-BAND** (500 to
+60K views, an account near the user's size or one stage up: the best targets), **BIG**
+(over 60K views: broadcast, reply only with a one-liner), **CONVO** (replies are at least
+15% of likes), **SAVED** (10+ bookmarks), **OLD** (over 6h). A PEER: page is scored
+against its own median views and posts at 3x or more are flagged OUTLIER. If a
 page comes back with no articles it did not render in time; a second `wait` and
 `read_page` on the same tab costs no page load, so do that before giving up on it. Every post, notification and search result is
 an `article`: an author `link` with the handle in its href, a `link "N minutes ago"` (or a
@@ -125,6 +136,33 @@ Two patterns to treat specially:
   founder lore, build-in-public numbers, "distribution beats building" takes, intro posts.
   These become post ideas.
 
+## Pass 4: tracked peers
+
+`peers.txt` next to this file lists accounts one stage ahead of the user. Each run opens
+two of them (rotate: keep the last-opened handle in `<scratchpad>/peer_cursor.txt`),
+`navigate` to `https://x.com/<handle>`, label the read `PEER:<handle>`. The parser prints
+the page median and flags OUTLIER posts. An OUTLIER under 6 hours old is a reply target
+ahead of anything from search, because the author is watching that post. Any OUTLIER,
+whatever its age, is a format signal: say in section 4 what shape it was and why it ran.
+
+If the user names a new account worth watching, add it to `peers.txt` in the same commit
+as the run's other changes.
+
+## Pass 5: X List (optional)
+
+If `lists.txt` has a URL, `navigate` to it and label the read `LIST:<name>`. Treat it
+like a search lane with a lower bar: these are hand-picked peers, so an EARLY post from
+any of them is worth a reply even at low counts.
+
+## Skip log
+
+Every candidate looked at and not queued gets one line appended to
+`<scratchpad>/skipped.tsv`: `<status id><TAB><one-word reason>`. Reasons: `bait`,
+`promo`, `old`, `crowded`, `offlane`, `politics`, `crypto`, `done` (already replied),
+`author-cap` (two replies under that author today), `noise`. The parser reads this file
+as known ids so skipped posts never resurface, and the reasons are what you tune the
+lanes from: three `crypto` skips in one lane means the query needs an exclusion.
+
 ## Output
 
 Four sections, in this order:
@@ -132,8 +170,12 @@ Four sections, in this order:
 1. **Fresh, reply now**: anything under thirty minutes old from any pass, since that
    window closes fast.
 2. **Answer these on your own posts**: pass 1.
-3. **Conversations to join**: passes 2 and 3, best first. Twelve to fifteen replies
-   across sections 1-3 in total. Mix lengths so the batch does not read as one voice
+3. **Conversations to join**: passes 2 to 5, split into **Early** (EARLY-tagged, best
+   first; these go out first because the window is closing) and **Hot** (HOT or BIG,
+   one-liners only, low priority). Peer OUTLIERs and List posts lead the Early group.
+   Prefer PEER-BAND over BIG every time: a reply under a 5K-view post from someone your
+   size gets read and answered, a reply under a 500K-view post gets buried. Twelve to
+   fifteen replies across sections 1-3 in total. Mix lengths so the batch does not read as one voice
    stamped fifteen times: roughly a third one-liners (shape 4 in the voice skill), a
    third two-line additions, a third full three-to-four-line replies. Every unanswered
    reply on the user's own posts gets a draft, even a short warm one.
@@ -150,6 +192,11 @@ pass 3 (handle, why, rough size), and anything skipped on purpose and why.
 
 The user copies each reply, opens the link, pastes, posts. Suggest they space them out
 over the next two hours, a few minutes apart, rather than firing all at once.
+
+Close with the daily loop counter, one line, from `<scratchpad>/daily_log.tsv` (append
+`<date><TAB><time><TAB><drafts>` each run): runs today, replies drafted today, against
+the 40-50 target, plus a reminder of the two things the queue cannot count: answering
+comments on the user's own posts, and posting the routine's two posts.
 
 ## Volume and the ceiling
 

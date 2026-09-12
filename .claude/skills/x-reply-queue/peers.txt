@@ -1,0 +1,11 @@
+# Tracked peers, one handle per line. Accounts one stage ahead (roughly 2K-20K followers)
+# in the user's lane. The queue opens two of these per run, rotating top to bottom, and
+# flags any post running 3x above that profile's median views. Edit freely.
+heypetar
+shubh19
+aryanlabde
+merishabh_singh
+tanujDE3180
+navyabijoy
+cyrilXBT
+dark_coderz

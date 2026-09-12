@@ -179,6 +179,16 @@ Hashtags do almost nothing for reach on X and make a post look like spam, so the
 2. Draft 2-3 options, not one — vary the angle, not just the wording. For a campaign recap, one version might end on the cliffhanger and another on the takeaway.
 3. Reread each draft against the "what kills the voice" list. Cut every word that isn't pulling weight — the drafts should get *shorter* as you edit.
 4. Let length follow the shape, per the Length section above: quote-tweet replies and casual wins are one line, hot takes are a few, news story posts run as long as the story earns.
-5. Present the options plainly (no "Option A: 🎯" headers — just the tweets separated clearly) and note which one you'd post.
+5. Run the post coach on each draft before presenting. Every line is a yes or it goes back to step 3:
+   - the first line works on its own as the hook; a reader who stops there still got something
+   - one idea, not two stapled together
+   - all lowercase, no em-dashes, no "X: Y" label lines, no three-item parallel lists that read as AI
+   - every opinion is hedged ("i think", "i feel", "kinda") and every fact is not
+   - no link in the body; sources go in the first reply
+   - nothing that names or describes what the user is building, and no experience the user did not have
+   - the ending is something a reader can answer, add to, or push back on
+   - length matches the shape: one-liners are one line, stories run only as long as the story
+   - for replies: correct register (analytical for strangers, warm for people already talking to the user), shorter than the post, no @tags
+6. Present the options plainly (no "Option A: 🎯" headers — just the tweets separated clearly) and note which one you'd post.
 
 When the user gives feedback like "too polished" — the fix is usually cutting, lowercasing an accidental capital, or breaking a sentence into stacked lines, not adding slang. Slang that's forced reads worse than no slang.
