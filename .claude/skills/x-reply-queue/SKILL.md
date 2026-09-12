@@ -185,13 +185,41 @@ Four sections, in this order:
    news-story or hot-take shape) or, if it needs a fact the run did not verify, given as
    a one-line brief with what would need checking.
 
-Under each reply item: one line saying who, how old, why it is worth it; the link on its
-own line; the draft in a fenced block. End with: who engaged since last time (authors who
-liked or replied, new followers worth following back), **new accounts to watch** from
-pass 3 (handle, why, rough size), and anything skipped on purpose and why.
+### Item format (strict)
 
-The user copies each reply, opens the link, pastes, posts. Suggest they space them out
-over the next two hours, a few minutes apart, rather than firing all at once.
+The user reads this in a terminal. A fenced block means exactly one thing: paste this
+into X as-is. Nothing else ever goes inside a fence. Every item uses this template, in
+this order, with these labels:
+
+    ---
+    #3  @merishabh_singh · 2h ago · peer pass · 11.6K views · 2 replies · 29 bookmarks
+    WHY   author is watching this post, almost nobody has replied yet
+    POST  "Just got off a 30-minute call with an engineer that reminded me why..."
+    LINK  https://x.com/merishabh_singh/status/2098786204124864970
+    NOTE  the post cuts at "his answer hit hard:", so the draft answers the premise only
+
+    ```
+    i'd guess the answer was some version of "nobody has asked me to build anything new
+    in two years". the pipeline filters for what he has done, the call surfaces what he
+    wants to do next, and the second one is the hire
+    ```
+
+Rules for the template:
+
+- `#n` numbers run across the whole queue so the user can say "posted 1 to 6".
+- The header line carries who, age, which pass found it, and the counts. Nothing else.
+- `POST` is the first line of their post, quoted, so the user recognises it on X. Skip it
+  only for a reply to the user, where `POST` becomes `THEY SAID`.
+- `LINK` is always the direct status URL. If the run only has the profile, write
+  `LINK  https://x.com/<handle>  (latest post, direct link not captured)`.
+- `NOTE` is anything the user must know that is not part of the draft: a hedge, an
+  assumption, "only if you did not use today's connect slot". Omit the line when there is
+  nothing to say. Never put a note inside the fence, and never put a draft outside one.
+- One fence per item. Two options means two items with the same header and `(alt)`.
+- For a post idea the header is `POST IDEA n · <shape>` and a `FIRST REPLY` fence, when
+  there is one, follows the main fence with its own `FIRST REPLY` label above it.
+- Section prose (what is working, who engaged, skipped, the daily counter) stays as short
+  paragraphs or bullets and never contains a fence.
 
 Close with the daily loop counter, one line, from `<scratchpad>/daily_log.tsv` (append
 `<date><TAB><time><TAB><drafts>` each run): runs today, replies drafted today, against
