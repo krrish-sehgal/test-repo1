@@ -91,9 +91,10 @@ Three lanes, run in this order:
    Not `raised`: politicians "raise" issues, and city names alone pull in civic news, so
    expect a third of this lane to be noise and skip it without comment.
 3. Creator and marketing. Niche lanes need one group and a lower floor:
-   `("ugc ads" OR "ugc creator" OR "ugc video" OR "creator economy" OR "influencer marketing" OR "brand deal" OR d2c) min_faves:20 -filter:links -filter:replies lang:en`
+   `("ugc ads" OR "ugc creator" OR "ugc video" OR "creator economy" OR "influencer marketing" OR "creator marketing" OR d2c OR "brand campaign") min_faves:20 -filter:links -filter:replies lang:en`
    Never bare `ugc`: in India it is also the University Grants Commission and the
-   results fill with education politics.
+   results fill with education politics. Never `"brand deal"`: it returns k-pop fan
+   accounts almost exclusively.
 
 If a search returns no `article` nodes, retry once with the second parenthetical group
 removed and `min_faves` halved. If it still returns nothing, say so and move on.
