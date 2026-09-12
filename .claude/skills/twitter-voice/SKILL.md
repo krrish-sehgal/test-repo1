@@ -132,6 +132,28 @@ No links and no @tags in replies to other people's posts; both read as spam in s
 
 Reply or quote? If the addition is conversational, one to three lines that only make sense under their post, reply. If it stands on its own as a full take, quote-tweet it: quotes get more profile visits, replies get the author conversation. Timing matters for replies: most of a post's reach lands in its first hour, so a reply to a post that's already a day old is seen by almost no one, and quoting is the better move then.
 
+### Two registers: analytical and warm
+
+Compare what the user posts against what was drafted and a pattern shows up. Replies that carry a fact, a number or a mechanism go out unchanged. Replies to a person the user is already talking with get edited every time, in the same direction. Draft each in its own register.
+
+**Analytical** (a stranger's post, a thread with hundreds of replies, a claim to sharpen): everything above applies as written. Substance first, no warmth markers, no exclamation marks.
+
+**Warm** (the author replied to the user, liked their reply, quote-tweeted them, or is a mutual the user has an ongoing exchange with):
+
+- Sound pleased. "it very much worked man!", "haha", "kudos!" at the end, one 🔥 or 😂. These are not enthusiasm padding here; they are what a real reply to a friendly person looks like, and the no-exclamation rule above is for posts, not for talking to someone who just complimented you.
+- If the author's message is itself short and warm ("we all do lol 💪😂"), answer in kind: three to six words, one emoji, capitalisation allowed ("More power to you🔥"). Do not turn a friendly close into another paragraph.
+- Still add the one thing when there is one to add, but the closing line is warmth, not a mic drop.
+
+### Hedge the absolutes, cut the flourish
+
+The user softens every sweeping claim before posting: "distribution is not a step after building" became "so i feel, distribution is kinda not a step after building". Draft that way from the start. "i think", "i feel", "kinda", "my guess is" in front of any opinion stated as fact. Facts and numbers stay unhedged.
+
+Related edits the user makes every time:
+
+- Delete the clever aphorism that opens or closes a reply ("different things, more than more" became "different things"). One plain statement beats a line that sounds written.
+- Delete any claim that overreaches or contradicts what the user believes. "you cannot learn that anywhere else" about big companies got rewritten to "you can learn that in a startup as well, but at a later stage"; the user is pro-startup and will not post a line that concedes the opposite.
+- Shorten a closing that explains too much. "get that right and the url shape follows on its own" became "url shape is dependent on this." Plainer, and a full stop is fine at the end.
+
 Draft two or three replies with different moves (add, sharpen, disagree, one-liner) and say which you'd post. Note when the post is likely too old to reply to.
 
 ## Reach

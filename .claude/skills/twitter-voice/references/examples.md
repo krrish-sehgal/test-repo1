@@ -130,6 +130,22 @@ Three replies, three different moves:
 
 ---
 
+### Drafted vs posted (real edits, Sept 2026)
+
+The user's edits to drafts, verbatim. Learn the direction, not the words.
+
+**Warm reply-back to an author who had just replied.** Drafted: "it very much worked, and the word carrying that sentence is genuine ... you are the rare account where the replies are as good as the posts". Posted: "it very much worked man! and the word carrying that sentence is genuine ... you are the rare account where the replies are as good as the posts, kudos!" Same body, warmer edges.
+
+**Author closed with "We all do lol 💪😂".** Drafted a three-line thank-you. Posted: "More power to you🔥". Match a short warm close with a short warm close.
+
+**Opinion stated as fact.** Drafted: "distribution is not a step after building, it is the same job." Posted: "so i feel, distribution is kinda not a step after building, it is the same job." Also added ", haha" to the end of the joke line before it.
+
+**Overreach against the user's own stance.** Drafted: "a big company shows you what a system looks like when it has to survive a billion users, and you cannot learn that anywhere else / a startup shows you what it costs to ship anything at all". Posted: "a big company shows you what a system looks like when it has to survive a billion users at day0 / you can learn that in a startup as well, but at a later stage , at day0 it shows you what it costs to ship anything at all". The opening flourish "different things, more than more" became "different things".
+
+**Closing that over-explains.** Drafted: "get that right and the url shape follows on its own". Posted: "url shape is dependent on this."
+
+**Posted unchanged:** the CTC/in-hand breakdown, the currencies comparison, the Wang swarm "one clause" reply, the Hoplite live-handoff question, the "gold mine" reply to Petar, the "who survives the first time a customer checks" reply. Fact-carrying, mechanism-carrying replies pass as drafted.
+
 ## Vocabulary notes
 
 - slang that appears naturally: noice, nvm, guys, ngl
