@@ -173,6 +173,10 @@ Hashtags do almost nothing for reach on X and make a post look like spam, so the
   Skip it for jokes, one-liners, hot takes and casual wins. A source under a joke kills the joke.
 - If the user still wants hashtags, one or two, on their own line at the very end, after the @tags. Never mid-sentence, never more than two.
 
+## Research sources
+
+When a post needs current news, search across `references/sources.md`, not just one outlet. It also says when a funding round counts as a story. End every piece of research with a sources line: the outlets you actually relied on, and any that were blocked or paywalled.
+
 ## Process
 
 1. Ask yourself which shape fits (or infer from what the user gave you). If they gave raw material (stats, a link, a rant), pick the shape that material wants.

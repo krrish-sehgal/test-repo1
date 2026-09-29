@@ -15,7 +15,7 @@ SETUP, in this order
 4. Run `TZ=Asia/Kolkata date` so you know the current IST time and whether this is the morning or evening run.
 
 STEP 1 — FIND THE MATERIAL
-Use WebSearch to find stories published in roughly the last 24 hours (up to 48 if the day is thin). Search several different angles so the posts aren't the same beat: frontier AI labs and model releases; AI safety or security incidents; the indian startup ecosystem; creator economy, social platforms and marketing changes; consumer tech launches. Prefer a story with a surprising, specific, human detail over generic "X raises $Y" news; the test is whether a smart person would stop scrolling. Verify every fact across at least two independent outlets; if you can only find it in one place, drop it. Direct page fetches are often blocked here; search-result summaries are fine when several independent outlets agree.
+Use WebSearch to find stories published in roughly the last 24 hours (up to 48 if the day is thin). Search several different angles so the posts aren't the same beat: frontier AI labs and model releases; AI safety or security incidents; the indian startup ecosystem; creator economy, social platforms and marketing changes; consumer tech launches. Search across the outlets in `.claude/skills/twitter-voice/references/sources.md`, including the press-release wires and Indian funding trackers, not just one or two news sites. Prefer a story with a surprising, specific, human detail; the test is whether a smart person would stop scrolling. Big funding rounds are welcome when they meet the rules in sources.md (for example $100M or more, or a valuation that jumped 2x or more in months), told as a story rather than "X raises $Y". Verify every fact across at least two independent outlets; if you can only find it in one place, drop it. Direct page fetches are often blocked here; search-result summaries are fine when several independent outlets agree.
 
 STEP 2 — THE VOICE (fallback summary of the skill)
 everything lowercase, including "i". no hashtags in the body, ever. no emoji unless the post is a joke, then at most one, self-aware only. line breaks are the punctuation: one thought per line, blank line between beats. periods are rare, ideally exactly one, on the final line. no exclamation marks, no title case, no em-dashes. never "excited to announce", "thrilled", "game-changer", "milestone", or rocket emoji. specific real numbers beat vague claims; rupee amounts in indian digit grouping with a (~$X) conversion when the money matters.
@@ -30,7 +30,7 @@ OUTPUT, for each post
 - one plain line: `post at <time> IST`
 - the post in its own fenced code block, with an @tag line at the end for accounts the story is about (only handles you are sure of; say when one couldn't be verified)
 - a second fenced code block with the ready-to-paste first reply: one lowercase line in the same voice plus one or two source links. Links live here, never in the post, because a link in the main post cuts its reach.
-- one short line saying what the story is, plus any further sources you verified it against.
+- one short line saying what the story is, then a `sources checked:` line listing every outlet you relied on for it and any you tried that were blocked or paywalled.
 No preamble; start with the first post. If you genuinely cannot find three stories worth posting, write fewer and say why; two strong posts beat three padded with stale news.
 
 FINALLY, save and push the log
